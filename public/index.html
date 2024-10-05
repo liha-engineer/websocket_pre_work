@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="./styles.css" />
+    <script src = "/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+      <div class="chat-header">
+        <h2>채팅</h2>
+        <span><strong>ID: </strong></span>
+        <div id="socket-id"></div>
+      </div>
+      <div class="chat-body" id="messages">
+        <div class="chat-message">
+          <div class="name">이름</div>
+          <div class="message">메세지</div>
+        </div>
+      </div>
+      <div class="chat-footer">
+        <input id="messageInput" type="text" placeholder="메시지 입력..." />
+        <button id="sendButton">전송</button>
+      </div>
+    </div>
+    </div>
+<script src = "script.js"></script>
+</body>
+</html>
